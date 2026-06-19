@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+section:nth-child(1) {
+    background: #4fc3f7;
+}
+
+section:nth-child(2) {
+    background: #2196f3;
+}
+
+section:nth-child(3) {
+    background: #1565c0;
+}
+
+section:nth-child(4) {
+    background: #0d47a1;
+}
+
+section:nth-child(5) {
+    background: #000033;
+}
