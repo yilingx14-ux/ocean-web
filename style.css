@@ -107,6 +107,202 @@ section:nth-of-type(5) {
     border-radius: 8px;
 }
 
+.creatures-page {
+    background: #07182e;
+}
+
+.creatures-main {
+    padding: 112px 0 64px;
+}
+
+.creatures-hero {
+    max-width: 1040px;
+    margin: 0 auto 28px;
+    padding: 0 28px;
+    box-sizing: border-box;
+}
+
+.creatures-hero h1 {
+    margin: 0 0 10px;
+    font-size: 3rem;
+}
+
+.creatures-hero p {
+    max-width: 620px;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.ocean-zone {
+    display: block;
+    height: auto;
+    min-height: 0;
+    padding: 34px 28px 42px;
+    font-size: 1rem;
+}
+
+.creatures-page .ocean-surface {
+    background: #4fc3f7;
+}
+
+.creatures-page .sunlight-zone {
+    background: #2196f3;
+}
+
+.creatures-page .twilight-zone {
+    background: #1565c0;
+}
+
+.creatures-page .midnight-zone {
+    background: #0d47a1;
+}
+
+.creatures-page .abyss-zone {
+    background: #06185a;
+}
+
+.creatures-page .trench-zone {
+    background: #000033;
+}
+
+.zone-title-block {
+    max-width: 1040px;
+    margin: 0 auto 18px;
+    padding: 24px 26px;
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.18);
+    box-sizing: border-box;
+}
+
+.zone-title-block p {
+    margin: 0 0 8px;
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+
+.zone-title-block h2 {
+    margin: 0;
+    font-size: 2.4rem;
+}
+
+.animal-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
+.animal-card {
+    min-height: 92px;
+    padding: 18px;
+    color: white;
+    font: inherit;
+    font-size: 1.08rem;
+    font-weight: 700;
+    text-align: left;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    border-radius: 8px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+    transition: transform 160ms ease, background 160ms ease, border-color 160ms ease;
+}
+
+.animal-card:hover,
+.animal-card:focus-visible {
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.24);
+    border-color: rgba(255, 255, 255, 0.6);
+    outline: none;
+}
+
+.animal-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 30;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background: rgba(0, 10, 24, 0.72);
+    box-sizing: border-box;
+}
+
+.animal-modal.is-open {
+    display: flex;
+}
+
+.animal-modal-panel {
+    position: relative;
+    width: min(560px, 100%);
+    padding: 34px;
+    color: #08213f;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 28px 80px rgba(0, 0, 0, 0.42);
+    box-sizing: border-box;
+}
+
+.modal-close {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    width: 38px;
+    height: 38px;
+    color: #08213f;
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+}
+
+.modal-zone {
+    margin: 0 0 8px;
+    color: #1565c0;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.animal-modal-panel h2 {
+    margin: 0 42px 18px 0;
+    font-size: 2.2rem;
+}
+
+.modal-facts {
+    margin: 0 0 18px;
+    padding: 14px;
+    background: #e8f4ff;
+    border-radius: 8px;
+}
+
+.modal-facts div {
+    display: flex;
+    gap: 12px;
+}
+
+.modal-facts dt {
+    font-weight: 700;
+}
+
+.modal-facts dd {
+    margin: 0;
+}
+
+.animal-modal-panel p:last-child {
+    margin: 0;
+    color: #163553;
+    font-size: 1.08rem;
+    line-height: 1.6;
+}
+
 @media (max-width: 700px) {
     .site-nav {
         align-items: flex-start;
@@ -121,6 +317,31 @@ section:nth-of-type(5) {
     .info-grid {
         grid-template-columns: 1fr;
     }
+
+    .creatures-main {
+        padding-top: 146px;
+    }
+
+    .creatures-hero h1 {
+        font-size: 2.35rem;
+    }
+
+    .zone-title-block h2 {
+        font-size: 1.9rem;
+    }
+
+    .animal-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .animal-modal-panel {
+        padding: 30px 24px 26px;
+    }
+
+    .animal-modal-panel h2 {
+        font-size: 1.8rem;
+    }
+
 }
 
 /* --------------------------------------- BUBBLES ----------------------------------------- */

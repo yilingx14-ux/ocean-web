@@ -5,40 +5,148 @@
     <title>Creatures - Ocean</title>
 </head>
 
-<body class="page-body">
+<body class="page-body creatures-page">
     <nav class="site-nav">
         <a class="site-logo" href="index.html">Ocean</a>
         <div class="site-links">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="creatures.html">Creatures</a>
+            <a href="games.html">Games</a>
         </div>
     </nav>
 
-    <main class="sub-page">
-        <h1>Commonly Known Aquatic Species</h1>
-        <div class="info-grid">
-            <article>
-                <h2>Epipelagic (Sunlight) Zone</h2>
-                <p>Fishes.</p>
-            </article>
-            <article>
-                <h2>Mesopelagic (Twilight) Zone</h2>
-                <p>Fishes.</p>
-            </article>
-            <article>
-                <h2>Bathypelagic (Midnight) Zone</h2>
-                <p>Fishes.</p>
-            </article>
-            <article>
-                <h2>Abyssopelagic Zone (The Abyss)</h2>
-                <p>Fishes.</p>
-            </article>
-            <article>
-                <h2>Hadalpelagic Zone (Trenches)</h2>
-                <p>Fishes.</p> 
-            </article>
-        </div>
+    <main class="creatures-main">
+        <header class="creatures-hero">
+            <h1>Ocean Creatures</h1>
+            <p>Explore the animals that live in each layer of the ocean.</p>
+        </header>
+
+        <section class="ocean-zone ocean-surface">
+            <div class="zone-title-block">
+                <p>0 m</p>
+                <h2>Ocean Surface</h2>
+            </div>
+            <div class="animal-grid">
+                <button class="animal-card" data-name="Sea Turtle" data-zone="Ocean Surface" data-depth="Near the surface" data-info="Sea turtles breathe air, so they return to the surface often. They travel long distances and feed on jellyfish, seagrass, and small ocean animals.">Sea Turtle</button>
+                <button class="animal-card" data-name="Jellyfish" data-zone="Ocean Surface" data-depth="Surface to deep water" data-info="Jellyfish drift with currents and use stinging tentacles to catch tiny animals. Some species glow in the dark or form huge blooms.">Jellyfish</button>
+                <button class="animal-card" data-name="Plankton" data-zone="Ocean Surface" data-depth="Mostly sunlit water" data-info="Plankton are tiny drifting organisms. Many make energy from sunlight and form the base of the ocean food web.">Plankton</button>
+            </div>
+        </section>
+
+        <section class="ocean-zone sunlight-zone">
+            <div class="zone-title-block">
+                <p>0-200 m</p>
+                <h2>Sunlight Zone</h2>
+            </div>
+            <div class="animal-grid">
+                <button class="animal-card" data-name="Dolphin" data-zone="Sunlight Zone" data-depth="0-200 m" data-info="Dolphins are intelligent mammals that hunt fish and squid in groups. They use clicks and whistles to communicate and locate prey.">Dolphin</button>
+                <button class="animal-card" data-name="Clownfish" data-zone="Sunlight Zone" data-depth="Warm shallow reefs" data-info="Clownfish live among sea anemones. The anemone protects them with stinging tentacles, and the clownfish helps keep the anemone clean.">Clownfish</button>
+                <button class="animal-card" data-name="Reef Shark" data-zone="Sunlight Zone" data-depth="Reefs and coastal water" data-info="Reef sharks patrol coral reefs and help keep food chains balanced by hunting weaker or smaller animals.">Reef Shark</button>
+            </div>
+        </section>
+
+        <section class="ocean-zone twilight-zone">
+            <div class="zone-title-block">
+                <p>200-1,000 m</p>
+                <h2>Twilight Zone</h2>
+            </div>
+            <div class="animal-grid">
+                <button class="animal-card" data-name="Lanternfish" data-zone="Twilight Zone" data-depth="200-1,000 m" data-info="Lanternfish have light-producing organs that help them blend in, find mates, and confuse predators in dim water.">Lanternfish</button>
+                <button class="animal-card" data-name="Vampire Squid" data-zone="Twilight Zone" data-depth="600-900 m" data-info="The vampire squid lives in low-oxygen water. It can wrap its webbed arms around itself and release glowing mucus when threatened.">Vampire Squid</button>
+                <button class="animal-card" data-name="Hatchetfish" data-zone="Twilight Zone" data-depth="200-1,000 m" data-info="Hatchetfish have thin, shiny bodies and glowing undersides that make them hard to see from below.">Hatchetfish</button>
+            </div>
+        </section>
+
+        <section class="ocean-zone midnight-zone">
+            <div class="zone-title-block">
+                <p>1,000-4,000 m</p>
+                <h2>Midnight Zone</h2>
+            </div>
+            <div class="animal-grid">
+                <button class="animal-card" data-name="Anglerfish" data-zone="Midnight Zone" data-depth="1,000-4,000 m" data-info="Female anglerfish use a glowing lure to attract prey in total darkness. Their large mouths help them eat animals nearly their own size.">Anglerfish</button>
+                <button class="animal-card" data-name="Gulper Eel" data-zone="Midnight Zone" data-depth="500-3,000 m" data-info="The gulper eel has an enormous mouth that opens wide like a net, helping it catch scarce food in the deep ocean.">Gulper Eel</button>
+                <button class="animal-card" data-name="Giant Squid" data-zone="Midnight Zone" data-depth="Deep open ocean" data-info="Giant squid are mysterious deep-sea hunters with huge eyes that help them detect faint light far below the surface.">Giant Squid</button>
+            </div>
+        </section>
+
+        <section class="ocean-zone abyss-zone">
+            <div class="zone-title-block">
+                <p>4,000-6,000 m</p>
+                <h2>The Abyss</h2>
+            </div>
+            <div class="animal-grid">
+                <button class="animal-card" data-name="Dumbo Octopus" data-zone="The Abyss" data-depth="3,000-4,000+ m" data-info="Dumbo octopuses flap ear-like fins to move through deep water. They live in cold, dark places where pressure is extreme.">Dumbo Octopus</button>
+                <button class="animal-card" data-name="Sea Cucumber" data-zone="The Abyss" data-depth="Seafloor" data-info="Deep-sea cucumbers crawl across the seafloor and eat bits of organic material that sink down from higher ocean layers.">Sea Cucumber</button>
+                <button class="animal-card" data-name="Basket Star" data-zone="The Abyss" data-depth="Deep seafloor" data-info="Basket stars spread many branching arms into the water to catch tiny floating food particles.">Basket Star</button>
+            </div>
+        </section>
+
+        <section class="ocean-zone trench-zone">
+            <div class="zone-title-block">
+                <p>6,000-11,000 m</p>
+                <h2>The Trenches</h2>
+            </div>
+            <div class="animal-grid">
+                <button class="animal-card" data-name="Snailfish" data-zone="The Trenches" data-depth="6,000-8,000+ m" data-info="Trench snailfish are soft-bodied fish adapted to crushing pressure. They are among the deepest-living fish ever observed.">Snailfish</button>
+                <button class="animal-card" data-name="Amphipod" data-zone="The Trenches" data-depth="Deep trenches" data-info="Amphipods are small crustaceans that scavenge food in trenches. Some can survive pressures that would crush most animals.">Amphipod</button>
+                <button class="animal-card" data-name="Tube Worm" data-zone="The Trenches" data-depth="Hydrothermal vents" data-info="Some tube worms live near deep-sea vents and rely on bacteria that turn chemicals from the vents into energy.">Tube Worm</button>
+            </div>
+        </section>
+
     </main>
+
+    <div class="animal-modal" id="animal-modal" aria-hidden="true">
+        <div class="animal-modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <button class="modal-close" type="button" aria-label="Close creature details">&times;</button>
+            <p class="modal-zone" id="modal-zone"></p>
+            <h2 id="modal-title"></h2>
+            <dl class="modal-facts">
+                <div>
+                    <dt>Depth</dt>
+                    <dd id="modal-depth"></dd>
+                </div>
+            </dl>
+            <p id="modal-info"></p>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.querySelector("#animal-modal");
+        const modalTitle = document.querySelector("#modal-title");
+        const modalZone = document.querySelector("#modal-zone");
+        const modalDepth = document.querySelector("#modal-depth");
+        const modalInfo = document.querySelector("#modal-info");
+        const closeButton = document.querySelector(".modal-close");
+
+        document.querySelectorAll(".animal-card").forEach((card) => {
+            card.addEventListener("click", () => {
+                modalTitle.textContent = card.dataset.name;
+                modalZone.textContent = card.dataset.zone;
+                modalDepth.textContent = card.dataset.depth;
+                modalInfo.textContent = card.dataset.info;
+                modal.classList.add("is-open");
+                modal.setAttribute("aria-hidden", "false");
+                closeButton.focus();
+            });
+        });
+
+        function closeModal() {
+            modal.classList.remove("is-open");
+            modal.setAttribute("aria-hidden", "true");
+        }
+
+        closeButton.addEventListener("click", closeModal);
+        modal.addEventListener("click", (event) => {
+            if (event.target === modal) {
+                closeModal();
+            }
+        });
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape" && modal.classList.contains("is-open")) {
+                closeModal();
+            }
+        });
+    </script>
 </body>
 </html>
